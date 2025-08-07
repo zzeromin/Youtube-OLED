@@ -38,18 +38,18 @@ sudo apt update
 sudo apt install -y playerctl fonts-nanum
 ```
 
-### 2. Python 가상환경 및 필수 라이브러리 설치
+### 2. 프로젝트 클론 또는 복사
+```bash
+git clone https://github.com/zzeromin/Youtube-OLED.git
+cd Youtube-OLED
+```
+
+### 3. Python 가상환경 및 필수 라이브러리 설치
 ```bash
 python3 -m venv cava_env
 source cava_env/bin/activate
 pip install --upgrade pip
-pip install numpy pillow adafruit-circuitpython-ssd1306 watchdog
-```
-
-### 3. 프로젝트 클론 또는 복사
-```bash
-git clone https://github.com/zzeromin/Youtube-OLED.git
-cd Youtube-OLED
+pip install -r requirements.txt
 ```
 
 ### 4. cava 설치
